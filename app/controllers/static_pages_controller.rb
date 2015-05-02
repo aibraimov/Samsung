@@ -8,6 +8,7 @@ class StaticPagesController < ApplicationController
   end
 
   def help
+     render layout: "other_layout"
   end
 
   def about

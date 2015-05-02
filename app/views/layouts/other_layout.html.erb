@@ -4,12 +4,10 @@
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag "application", "ngProgress", media: "all",
                                            "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "angular.min", "angular-route.min", "angular-poller", "angular-cookies", "ng-infinite-scroll.min", "ngProgress.min","app", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
-<base href="http://localhost:3000/"/>
-<div ng-view id='dmain'></div>
   <body>
     <%= render 'layouts/header' %>
     <div class="container">
